@@ -1,0 +1,463 @@
+/* SECTION DEFAULT */
+.sec-content{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.sec-content-gray{
+  background-color: #F5F5F5;
+}
+.sec-content h1{
+  font-weight: lighter;
+  font-size: 18pt;
+  display: block;
+  width: 100%;
+}
+/* VIDEO countdown */
+#video-countdown{
+  min-height: 480px;
+  background: #757575;
+  color: white;
+}
+#video-countdown .container{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+#btn-mainkan-video{
+  margin-top: 32px;
+  padding: 8px 40px;
+}
+.timer-container{
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.timer {
+  font-size: 80pt;
+}
+.timer-name{
+  text-transform: uppercase;
+  font-size: 20pt;
+  font-weight: lighter;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  padding-right: 12px;
+}
+
+.nav-logo {
+  padding-right: 24px;
+}
+
+.navbar-brand > img {
+  width: 48px;
+  height: 48px;
+}
+
+#exp-ctr {
+  width: 64px !important;
+  height: 36px !important;
+}
+
+.btn-custom-white {
+  border-radius: 30px;
+  padding: 6px 16px;
+  color: #ff5252;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-custom-white:hover {
+  background-color: #eeeeee;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #fff !important;
+}
+.navbar-nav > a:hover{
+  text-decoration: underline;
+}
+
+@media (min-width: 992px){
+  .nav-right {
+    position: absolute;
+    right: 0;
+  }
+  .content-w-50{
+    width: 50%;
+  }
+  .content-w-md {
+    width: 480px;
+  }
+  .content-w-sm {
+    width: 232px;
+  }
+  .btn-w-sm {
+    width: 16%;
+  }
+
+  #form-login {
+    width: 18rem;
+    position: absolute;
+    z-index: 2;
+    top: 52px;
+    right: 8%;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-right {
+    padding: 8px;
+  }
+
+  img.content-w-sm {
+    width: 50%;
+  }
+  img.content-w-md {
+    width: 75%;
+  }
+}
+
+#grad1 {
+  height: 18px;
+  background-color: #c50e29; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #7f0000 , #ff5252); /* Standard syntax (must be last) */
+}
+#footer{
+  box-shadow: -1px -1px 10px 0px #e0e0e0;
+  padding-bottom: 32px;
+  padding-top: 16px;
+}
+
+.footer > h6 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer > a {
+  color: #212529;
+  margin-right: 12px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer.socmed > a{
+  margin-right: 12px !important;
+}
+
+.fa-container{
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+.fa-container.circle{
+  border-radius: 50%;
+}
+
+.fa-container .fa {
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#footer-sb-logo {
+  width: 80px;
+}
+
+.footer, .footer {
+  margin-top: 16px;
+}
+
+/* UMUM */
+.card-sm{
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* SECTION BELANJA UNTUK BANGSA */
+#belanjauntukbangsa .container{
+  padding-top: 8px;
+}
+#belanjauntukbangsa h1{
+  font-weight: lighter;
+  color: #212121;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  font-size: 18pt;
+}
+
+.img-dummy{
+  opacity: 0;
+  pointer-events: none;
+}
+.bg-img-cover{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-img-contain{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-huge {
+  font-size: 26px;
+  padding: 14px 64px;
+}
+#btn-daftar-sekarang{
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+/* OFFICIAL TIER PARTNER SECTION */
+#official-tier-partner{
+  background-color: #ff5252;
+  color: white;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* SECTION HARBOLNAS */
+
+
+/* SECTION PROMO PARTNER */
+#btn-lihat-semua{
+  font-size: 14px;
+  padding: 8px 40px;
+}
+
+/* SIDE SOCMED */
+#side-socmed{
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  font-size: 18pt;
+  transform: translateY(-50%);
+}
+#side-socmed .fa-container{
+  height: 52px;
+  width: 52px;
+}
+#side-socmed .fa-container .fa{
+  font-size: 32px;
+  display: block;
+}
+#side-socmed a:hover{
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  #side-socmed .fa-container{
+    height: 32px;
+    width: 32px;
+  }
+  #side-socmed .fa-container .fa{
+    font-size: 24px;
+  }
+
+  #form-login {
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  #modal-video > .modal-dialog > .modal-content > .modal-body > iframe {
+    height: 255px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  #form-login {
+    width: 18rem;
+    position: absolute;
+    z-index: 2;
+    top: 64px;
+    right: -36px;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .fg-dark > .font-weight-bold.c-white.center-v-h.relative.m-0 {
+    font-size: 20px !important;
+  }
+}
+
+/* HEAD SECTION */
+.head-sec{
+  min-height: 388px;
+  position: relative;
+  color: white;
+  background: #757575;
+}
+#head-sec-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+#head-sec-content h1{
+  font-size: 28pt;
+  font-weight: lighter;
+  margin-bottom: 36px;
+}
+.pagination{
+  display: inline-block;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 0px;
+}
+.pagination > li{
+  display: inline-block;
+  margin-left: -4px;
+}
+.pagination > li.active{
+  background-color: #ff5252;
+}
+.pagination > li.active a{
+  color: white;
+}
+.pagination a{
+  color: #BDBDBD;
+  border: 1px solid #BDBDBD;
+  padding: 8px 12px;
+  margin-left: -1px;
+  float: left;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* PROMO PARTNER */
+.promo-partner-desc{
+  margin-bottom: 16px;
+  padding: 0px;
+  font-size: 9pt;
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: block;
+  position: relative;
+}
+.promo-partner-item{
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.promo-partner-item h1{
+  font-size: 24pt;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+      /* MEDIA */
+@media (max-width: 992px) {
+  .promo-partner-item{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .promo-partner-desc{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .promo-partner-item{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .promo-partner-item h1{
+    font-size: 20pt;
+    font-weight: bold;
+  }
+  .promo-partner-desc{
+    max-height: 46px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block;
+    white-space: nowrap;
+  }
+
+}
+
+.parenthover {
+  overflow: hidden;
+}
+
+.parenthover .hovereffect {
+  display: block;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.hovereffect:hover {
+  -ms-transform:scale(1.05);
+  -webkit-transform:scale(1.05);
+  transform:scale(1.05);
+}
+
+.no-border {
+  border-color: transparent;
+  border-width: 0;
+  background-color: transparent;
+}
+
+.card-title.bg-primary {
+  padding: 16px;
+}
+
+#form-login > .card-body > form > .input-group {
+  margin-bottom: 12px;
+}
+
+.invalid-feedback {
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.is-invalid,.invalid-feedback {
+  border-color: #ff5252 !important;
+  color: #ff5252;
+}
+
+#live-chat {
+  z-index: 1;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 64px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#live-chat-body {
+  position: fixed;
+  z-index: 1;
+  right: 0px;
+  bottom: 0px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}

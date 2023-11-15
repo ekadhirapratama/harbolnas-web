@@ -1,0 +1,32 @@
+.bg-primary {
+  background-color: #ff5252 !important; }
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #ff1f1f !important; }
+
+/* color white */
+.c-w {
+  color: #fff !important;
+}
+
+/* color red */
+.c-r {
+  color: #ff5252 !important;
+}
+
+/* color grey 400 */
+.c-g-400 {
+    color: #bdbdbd;
+}
+
+/* color grey 500 */
+.c-g-500{
+  color: #9e9e9e;
+}
+
+/* color grey 600 */
+.c-g-600{
+  color: #757575;
+}
