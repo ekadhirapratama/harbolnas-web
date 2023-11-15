@@ -65,7 +65,7 @@
   </script>
 
   <!-- Start of harbolnas Zendesk Widget script -->
-  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=bebce542-6005-4dcb-949a-0b4ed6deb596"> </script>
+  <!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=bebce542-6005-4dcb-949a-0b4ed6deb596"> </script>
   <script>
     window.zESettings = {
       webWidget: {
@@ -75,7 +75,7 @@
         }
       }
     };
-  </script>
+  </script> -->
   <!-- End of harbolnas Zendesk Widget script -->
 
   @yield('scripts')
