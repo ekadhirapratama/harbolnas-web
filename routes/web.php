@@ -20,8 +20,8 @@ use App\Http\Controllers\UserController;
 //     return view('welcome');
 // });
 
-// Auth::routes();
-Route::get('/', [PagesController::class, 'viewLanding']);
+Auth::routes();
+Route::get('/', [PagesController::class, 'viewLanding'])->name('landing');
 Route::get('/tentang-harbolnas', [PagesController::class, 'viewAbout']);
 Route::get('/peserta-harbolnas', [PagesController::class, 'viewParticipant']);
 Route::get('/peserta-harbolnas/detail', [PagesController::class, 'viewDetailParticipant']);
