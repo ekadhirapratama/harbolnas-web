@@ -129,7 +129,8 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body">
-              <iframe width="100%" height="420" src="https://drive.google.com/file/d/1PlACiRAofGLDKStjpinO4bClli2FLN6N/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              Content
+              <!-- <iframe width="100%" height="420" src="https://drive.google.com/file/d/1PlACiRAofGLDKStjpinO4bClli2FLN6N/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             </div>
           </div>
         </div>
