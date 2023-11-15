@@ -20,37 +20,45 @@ use App\Http\Controllers\UserController;
 //     return view('welcome');
 // });
 
+// authentication routes
 Auth::routes();
-Route::get('/', [PagesController::class, 'viewLanding'])->name('landing');
-Route::get('/tentang-harbolnas', [PagesController::class, 'viewAbout']);
-Route::get('/peserta-harbolnas', [PagesController::class, 'viewParticipant']);
-Route::get('/peserta-harbolnas/detail', [PagesController::class, 'viewDetailParticipant']);
-Route::get('/promo-partner', [PagesController::class, 'viewPromoPartner']);
-Route::get('/mandiri', [PagesController::class, 'viewDetailPromoPartner']);
-Route::get('/Cimb-niaga', [PagesController::class, 'viewDetailPromoPartner']);
-Route::get('/experience-center', [PagesController::class, 'viewExperienceCenter']);
-Route::get('/edisi-produk-lokal', [PagesController::class, 'viewProductLocal']);
-// Route::get('/registrasi-peserta','PagesController@viewRegister');
-Route::get('/promo/{type_id}/{category}/{page}/{limit}',[PagesController::class, 'getPromo']);
 
-// Route::get('/dashboard', 'UserController@viewDashboard');
-// Route::get('/account-setting', 'UserController@viewAccount');
-// Route::get('/user-management', 'UserController@viewUser');
+// content page routes
+Route::controller(PagesController::class)->group(function ($route) {
+  Route::get('/', 'viewLanding')->name('landing');
+  Route::get('/tentang-harbolnas', 'viewAbout');
+  Route::get('/peserta-harbolnas', 'viewParticipant');
+  Route::get('/peserta-harbolnas/detail', 'viewDetailParticipant');
+  Route::get('/promo-partner', 'viewPromoPartner');
+  Route::get('/mandiri', 'viewDetailPromoPartner');
+  Route::get('/Cimb-niaga', 'viewDetailPromoPartner');
+  Route::get('/experience-center', 'viewExperienceCenter');
+  Route::get('/edisi-produk-lokal', 'viewProductLocal');
+  Route::get('/registrasi-peserta', 'viewRegister');
+  Route::get('/promo/{type_id}/{category}/{page}/{limit}', 'getPromo');
+});
+
+// logged in user routes
 Route::group(['middleware' => 'auth:web'], function ($route){
-  Route::get('/dashboard', [UserController::class, 'viewDashboard']);
-  Route::get('/account-setting', [UserController::class, 'viewAccount']);
-  Route::post('/account-setting/changepass', [UserController::class, 'changePass']);
-  Route::post('/account-setting/editprofile', [UserController::class, 'editprofile']);
-  Route::post('/dashboard/uploadbanner', [BannerController::class, 'create']);
-  Route::get('/promo/{id}/view', [BannerController::class, 'getPromo']);
-  Route::post('/promo/edit', [BannerController::class, 'edit']);
-  Route::post('/promo/delete', [BannerController::class, 'delete']);
+  Route::controller(BannerController::class)->group(function ($route) {
+    Route::post('/dashboard/uploadbanner', 'create');
+    Route::get('/promo/{id}/view', 'getPromo');
+    Route::post('/promo/edit', 'edit');
+    Route::post('/promo/delete', 'delete');
+  });
+  
+  Route::controller(UserController::class)->group(function ($route) {
+    Route::get('/dashboard', 'viewDashboard');
+    Route::get('/account-setting', 'viewAccount');
+    Route::post('/account-setting/changepass', 'changePass');
+    Route::post('/account-setting/editprofile', 'editProfile');
 
-  Route::group(['middleware' => 'checkrole'], function ($route){
-    Route::get('/user-management', [UserController::class, 'viewUser']);
-    Route::post('/user-management/create', [UserController::class, 'create']);
-    Route::get('/user-management/{id}/view', [UserController::class, 'getUser']);
-    Route::post('/user-management/edituser', [UserController::class, 'edit']);
-    Route::post('/user-management/destroy', [UserController::class, 'destroy']);
+    Route::group(['middleware' => 'checkrole'], function ($route){
+      Route::get('/user-management', 'viewUser');
+      Route::post('/user-management/create', 'create');
+      Route::get('/user-management/{id}/view', 'getUser');
+      Route::post('/user-management/edituser', 'edit');
+      Route::post('/user-management/destroy', 'destroy');
+    });
   });
 });
